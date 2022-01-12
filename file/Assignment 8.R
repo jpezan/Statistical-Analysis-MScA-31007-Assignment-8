@@ -129,13 +129,3 @@ model.matrix(coag.altmodel)
 (sum((group.mean-grand.mean)^2)/3)/(sum((test_dat$Output-group.mean)^2)/(length(test_dat$Output)-4))
 (sum(group.mean^2)/4)/(sum((test_dat$Output-group.mean)^2)/(length(test_dat$Output)-4))
 
-# 1. Within group sum of squares 
-SSE 2630.656
-# 2. Between groups sum of squares 
-SSM 1823.464
-# 3. Means are not equal (yes)
-# 4. Sum of squares of predictor # 1369.51 - 2041.8
-# 5. Sum of squares of residuals # 39.38 - 2630.7
-# Look for Sum Sq for treatment and residuals
-anova(coag.altmodel)
-Not all group means 
